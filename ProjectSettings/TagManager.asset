@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Paddle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - YBlock
   - Water
   - UI
   - 
@@ -40,4 +41,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 19181727
+    locked: 0
+  - name: Foreground
+    uniqueID: 2117010181
     locked: 0

@@ -14,12 +14,12 @@ public class State
 
     public virtual void Enter()
     {
-        Debug.Log("Enter " + this);
+        //Debug.Log("Enter " + this);
     }
 
     public virtual void Exit()
     {
-        Debug.Log("Exit " + this);
+        //Debug.Log("Exit " + this);
     }
 
     public virtual void PhysicsUpdate()
