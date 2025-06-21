@@ -34,7 +34,7 @@ public class GameController : MonoBehaviour
         switch(gameState)
         {
             case GameStates.WaitingToSpawnBall:
-                Debug.Log("Game State = waiting to spawn ball");
+                //Debug.Log("Game State = waiting to spawn ball");
                 waitTimer += Time.deltaTime;
                 //Debug.Log(waitTimer);
                 if (waitTimer >= waitTime)
@@ -45,13 +45,13 @@ public class GameController : MonoBehaviour
                 break;
 
             case GameStates.SpawnBall:
-                Debug.Log("Spawn ball");
+                //Debug.Log("Spawn ball");
                 BallPool.Instance.SpawnBall(new Vector2(0, 0));
                 gameState = GameStates.BallInPlay;
                 break;
 
             case GameStates.BallInPlay:
-                Debug.Log("Game State = ball in play");
+                //Debug.Log("Game State = ball in play");
                 if (goalManager.goalScored || enemyGoalManager.goalScored)
                 {
                     gameState = GameStates.WaitingToSpawnBall;
